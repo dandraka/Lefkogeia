@@ -8,6 +8,38 @@ It logs all requests in a directory imaginatively called ```logs```. It creates 
 
 The primary use of Lefkogeia is to test/debug/troubleshoot REST API and web services clients. You run it (see release notes on that) and get your client to call it. It will log whatever was sent, allowing you to troubleshoot whatever problem you might have.
 
-## But why "Lefkogeia" and what does this mean?
+## Configuration
+
+To configure Lefkogeia, edit the appsettings.json file with a test editor.
+
+An example appsettings.json file to serve multiple addresses & ports would be:
+```json
+{
+	"Logging": {
+		"LogLevel": {
+			"Default": "Debug",
+			"System": "Information",
+			"Microsoft": "Information"
+		}
+	},
+	"Host": {
+		"Url": [
+			"http://localhost:6800",
+			"http://server1:7777",
+			"http://147.102.43.3:4545",
+		]
+	}
+}
+```
+
+Paths are not yet supported in URLs, so if you change http://server1:7777 to http://server1:7777/testapi you will get an error. This is planned for the next release.
+
+Also note that in order to use https:// you need to generate a certificate by running 
+```Batchfile
+dotnet dev-certs https --trust
+```
+For more info see https://go.microsoft.com/fwlink/?linkid=848054.
+
+## But why "Lefkogeia", what does this even mean?
 
 Because it's such a beautiful place! Lefkogeia is a small village in southern Crete with amazing beaches like Ammoudi, Shinaria, Klisidi and more. You can read more in [Tripadvisor](https://www.tripadvisor.com/Tourism-g1190439-Lefkogia_Rethymnon_Prefecture_Crete-Vacations.html).
