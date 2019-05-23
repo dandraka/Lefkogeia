@@ -42,4 +42,4 @@ For more info see https://go.microsoft.com/fwlink/?linkid=848054.
 
 ## But why "Lefkogeia", what does this even mean?
 
-Because it's such a beautiful place! Lefkogeia is a small village in southern Crete with amazing beaches like Ammoudi, Shinaria, Klisidi and more. You can read more in [Tripadvisor](https://www.tripadvisor.com/Tourism-g1190439-Lefkogia_Rethymnon_Prefecture_Crete-Vacations.html).
+Because it's such a beautiful place! Lefkogeia is a small village in southern Crete, Greece, with amazing beaches like Ammoudi, Shinaria, Klisidi and more. You can read more in [Tripadvisor](https://www.tripadvisor.com/Tourism-g1190439-Lefkogia_Rethymnon_Prefecture_Crete-Vacations.html).
